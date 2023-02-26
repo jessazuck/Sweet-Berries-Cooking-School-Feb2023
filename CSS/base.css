@@ -1,12 +1,14 @@
 /* **** BASE STYLING **** */
 :root {
-    background-color: #E5E5E5;
+    background-color: #F5F3EF;
+    --background-gray: #F5F3EF;
     --accent-white:#FFFFFF;
     --accent-gold: #FEBD2F;
     --accent-black: #000000;
     --accent-gray: #DCDCDC;
     --text-primary: #000000;
     --text-secondary:#646464;
+    --text-inverse: #FFFFFF;
   }
 
 /* **** CSS RESET STYLING **** */
