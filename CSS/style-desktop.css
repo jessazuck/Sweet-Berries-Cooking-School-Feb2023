@@ -114,9 +114,11 @@ nav {
     margin-right: 80px;
 }
 
-.banner-illustration {
+.banner-illustration img {
     height: 440px;
     width: 600px;
+    object-fit: cover;
+    border-radius: 40px;
 }
 
 /* **** COURSE CARDS CONTAINER STYLINGS **** */

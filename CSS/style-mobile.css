@@ -1,0 +1,20 @@
+h1 {
+    font-size: 36px;
+    padding-bottom: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.p1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.banner-illustration img {
+    height: 220px;
+    width: 342px;
+    object-fit: cover;
+    border-radius: 24px;    
+}
