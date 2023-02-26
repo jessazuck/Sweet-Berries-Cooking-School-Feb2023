@@ -10,7 +10,7 @@ h1, h2, h3 {
   }
 
 h1, h2 {
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 h1 {
@@ -24,12 +24,12 @@ h2 {
 
 h3 {
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     color: var(--text-secondary);
 }
 
@@ -45,7 +45,7 @@ p {
 
 .button1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     color: var(--text-primary);
     font-size: 18px;
     background-color: var(--accent-white);
@@ -56,7 +56,7 @@ p {
 
 .button2-light {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
     color: var(--text-primary);
     background-color: var(--background-gray);
@@ -65,7 +65,7 @@ p {
 
 .button2-dark {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
     background-color: var(--accent-black);
     color: var(--text-inverse);
