@@ -75,30 +75,22 @@ p {
     margin-left: 84px;
 }
 
-/* **** GRID CONTAINER STYLING **** */
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-    " . nav nav nav . "
-    " . banner banner banner . "
-    " . card1 card2 card3 . "
-    " . card4 card5 card6 . "
-    "footer footer footer footer footer";
-    gap: 80px 40px;
-    justify-items: center;
+/* **** MAIN CONTAINER STYLING **** */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 80px 1fr 1fr 1fr 80px;
 }
 
 /* **** NAV STYLINGS **** */
-nav {
-    grid-area: nav;
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 30px 0px 106px 0px;
+    padding: 0px 80px;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 26px;
   }
 
 .buttons-left button {
@@ -115,15 +107,16 @@ nav {
 
 /* **** BANNER STYLINGS **** */
 .banner {
-    grid-area: banner;
     display: flex;
     align-items: center;
+    margin: 0px 80px 120px 80px;
+    width: 1280px;
+    justify-content: space-between;
 }
 
 .banner-description {
     height: 440px;
     width: 600px;
-    margin-right: 80px;
 }
 
 .banner-illustration img {
@@ -133,9 +126,15 @@ nav {
     border-radius: 40px;
 }
 
-/* **** COURSE CARDS CONTAINER STYLINGS **** */
+/* **** GRID CONTAINER & COURSE CARDS STYLING **** */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 40px;
+    margin-bottom: 118px;
+}
+
 .course-explore-card {
-    grid-area: card1;
     background-color: var(--accent-gold);
     width: 400px;
     height: 324px;
@@ -180,29 +179,8 @@ nav {
     bottom: 10%;
   }
 
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card4 {
-    grid-area: card4;
-}
-
-.card5 {
-    grid-area: card5;
-}
-
-.card6 {
-    grid-area: card6;
-}
-
-/* **** FOOTER BANNER **** */
+/* **** FOOTER STYLINGS **** */
 .footer {
-    grid-area: footer;
     background-color: var(--accent-gold);
     text-align: center;
     padding: 24px 0;
