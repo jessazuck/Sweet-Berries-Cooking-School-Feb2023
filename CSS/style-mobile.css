@@ -12,9 +12,111 @@ h2 {
     line-height: 24px;
 }
 
+.grid-container {
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-areas: 
+    " . nav . "
+    " . banner . "
+    " . card1 . "
+    " . card2 . "
+    " . card3 . "
+    " . card4 . "
+    " . card5 . "
+    " . card6 . "
+    "footer footer footer";
+    gap: 40px 24px;
+}
+
+.banner-description {
+    width: 342px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+}
+
 .banner-illustration img {
     height: 220px;
     width: 342px;
     object-fit: cover;
     border-radius: 24px;    
+}
+
+.buttons-left {
+    display: none;
+}
+
+.button2-dark {
+    display: none;
+}
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+/* **** HAMBURGER NAV TOGGLE **** */
+.nav-toggle {
+    display: block;
+}
+
+.hamburger {
+    display: block;
+    background: #000;
+    width: 2.2em;
+    height: 3px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 8px;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #000;
+    width: 2.2em;
+    height: 3px;
+    border-radius: 8px;
+}
+.hamburger::before { top: 8px; }
+.hamburger::after { bottom: 8px; }
+
+
+nav {
+    justify-content: center;
+    padding-bottom: 16px;
+    padding-top: 24px;
+}
+
+.banner {
+    margin: 0 0 0 0;
+}
+
+.course-explore-card {
+    width: 342px;
+    height: 132px; 
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.course-explore-card h2 {
+    height: 84px;
+    width: 268px;
+    line-height: 24px;
+}
+
+.course-offering-card {
+    margin-bottom: 24px;
+    width: 342px;
+    height: 247px; 
+    padding: 24px;
+    border-radius: 24px;
 }
