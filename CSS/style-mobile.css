@@ -1,3 +1,4 @@
+/* **** OVERALL THEME STYLING **** */
 h1 {
     font-size: 36px;
     padding-bottom: 16px;
@@ -12,32 +13,12 @@ h2 {
     line-height: 24px;
 }
 
-.grid-container {
-    grid-template-columns: 24px 1fr 24px;
-    grid-template-areas: 
-    " . nav . "
-    " . banner . "
-    " . card1 . "
-    " . card2 . "
-    " . card3 . "
-    " . card4 . "
-    " . card5 . "
-    " . card6 . "
-    "footer footer footer";
-    gap: 40px 24px;
-}
-
-.banner-description {
-    width: 342px;
-    margin-right: 0px;
-    margin-bottom: 32px;
-}
-
-.banner-illustration img {
-    height: 220px;
-    width: 342px;
-    object-fit: cover;
-    border-radius: 24px;    
+/* **** NAV STYLINGS **** */
+.nav {
+    position: relative;
+    justify-content: center;
+    margin: 30px 0px 56px 0px;
+    padding: 0px 0px;
 }
 
 .buttons-left {
@@ -56,10 +37,6 @@ h2 {
     position: absolute;
     right: 1em;
     top: 1em;
-}
-
-/* **** HAMBURGER NAV TOGGLE **** */
-.nav-toggle {
     display: block;
 }
 
@@ -69,7 +46,7 @@ h2 {
     width: 2.2em;
     height: 3px;
     position: absolute;
-    top: 24px;
+    top: 6px;
     right: 24px;
     border-radius: 8px;
 }
@@ -85,18 +62,34 @@ h2 {
     height: 3px;
     border-radius: 8px;
 }
+
 .hamburger::before { top: 8px; }
 .hamburger::after { bottom: 8px; }
 
 
-nav {
-    justify-content: center;
-    padding-bottom: 16px;
-    padding-top: 24px;
+/* **** BANNER STYLINGS **** */
+.banner {
+    margin: 0 24px 40px 24px;
 }
 
-.banner {
-    margin: 0 0 0 0;
+.banner-description {
+    width: 342px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+}
+
+.banner-illustration img {
+    height: 220px;
+    width: 342px;
+    object-fit: cover;
+    border-radius: 24px;    
+}
+
+/* **** GRID CONTAINER & COURSE CARDS STYLING **** */
+.grid-container {
+    grid-template-columns: 1fr;
+    gap: 64px 0px;
+    margin-bottom: 60px;
 }
 
 .course-explore-card {
@@ -104,7 +97,6 @@ nav {
     height: 132px; 
     border-radius: 24px;
     padding: 24px;
-    margin-bottom: 24px;
 }
 
 .course-explore-card h2 {
@@ -119,4 +111,9 @@ nav {
     height: 247px; 
     padding: 24px;
     border-radius: 24px;
+}
+
+.course-offering-card p {
+    height: 96px;
+    width: 294px;
 }

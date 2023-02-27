@@ -1,34 +1,4 @@
-
-/* **** BANNER STYLINGS **** */
-.grid-container {
-    grid-template-columns: 40px 1fr 1fr 40px;
-    grid-template-areas: 
-    " . nav nav . "
-    " . banner banner . "
-    " . card1 card2 . "
-    " . card3 card4 . "
-    " . card5 card6 . "
-    "footer footer footer footer";
-    gap: 56px 24px;
-}
-
-nav {
-    padding-bottom: 30px;
-}
-
-.banner {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 16px 0;
-}
-
-.banner-description {
-    text-align: center;
-    margin-right: 0px;
-    margin-bottom: 60px;
-    flex: 0 1 232px;
-}
-
+/* **** OVERALL THEME STYLING **** */
 h1 {
     font-size: 48px;
     padding-bottom: 24px;
@@ -58,11 +28,39 @@ h3 {
     padding: 6px 24px;
 }
 
+/* **** NAV STYLINGS **** */
+.nav {
+    margin: 30px 0px 86px 0px;
+    padding: 0px 40px;
+  }
+
+/* **** BANNER STYLINGS **** */
+.banner {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px 72px 40px;
+    width: auto;
+}
+
+.banner-description {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    height: auto;
+}
+
 .banner-illustration img {
     height: 360px;
     width: 688px;
     object-fit: cover;
     border-radius: 32px;    
+}
+
+/* **** GRID CONTAINER & COURSE CARDS STYLING **** */
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 56px 24px;
+    margin-bottom: 80px;
 }
 
 .course-explore-card {
@@ -96,9 +94,10 @@ h3 {
     margin-top: 24px;
 }
 
-.course-offering-card img {
-    left: 67%;
-    right: 80%;
+  .course-offering-card img {
+    left: 72.9%;
+    right: 88.5%;
     top: -15%;
-    bottom: 5%;
+    bottom: 8%;
+    height: 60px;
   }
