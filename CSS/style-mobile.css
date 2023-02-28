@@ -25,6 +25,10 @@ h2 {
     display: none;
 }
 
+.logo img {
+    height: 32px;
+}
+
 .button2-dark {
     display: none;
 }
@@ -116,4 +120,9 @@ h2 {
 .course-offering-card p {
     height: 96px;
     width: 294px;
+}
+
+/* **** FOOTER STYLINGS **** */
+.footer img {
+    height: 24px;
 }

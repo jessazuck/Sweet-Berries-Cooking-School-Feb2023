@@ -97,6 +97,10 @@ p {
     padding-right: 47px;
 }
 
+.logo img {
+    height: 40px;
+}
+
 .nav-toggle {
     display: none;
 }
@@ -185,4 +189,8 @@ p {
     text-align: center;
     padding: 24px 0;
     width: 100%;
+}
+
+.footer img {
+    height: 32px;
 }
