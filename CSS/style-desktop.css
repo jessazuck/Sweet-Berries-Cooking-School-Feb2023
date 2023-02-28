@@ -101,12 +101,12 @@ p {
     height: 40px;
 }
 
-.nav-toggle {
+.hamburger-menu {
     display: none;
-}
-
-.hamburger {
-    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 16px;
 }
 
 /* **** BANNER STYLINGS **** */
