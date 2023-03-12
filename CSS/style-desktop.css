@@ -76,6 +76,11 @@ p {
 }
 
 /* **** MAIN CONTAINER STYLING **** */
+/* You haven’t used Grid and Flexbox together well.
+The main layout should be a display grid and some of the grid items could continue to be a flex box such as the header. */
+
+/* You haven’t used Grid template areas for the main layout.
+This is one of the points in the rubric */
 .main-container {
     display: flex;
     flex-direction: column;
@@ -101,6 +106,7 @@ p {
     height: 40px;
 }
 
+/* Nice work on using the correct font for the correct element! */
 .hamburger-menu {
     display: none;
     font-family: 'Roboto', sans-serif;
@@ -123,6 +129,8 @@ p {
     width: 600px;
 }
 
+/* The image is not responsive because the width and height have pixel (px) values.
+Use percentages (%) values to make images responsive. */
 .banner-illustration img {
     height: 440px;
     width: 600px;
